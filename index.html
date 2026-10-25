@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BYRON JUPITER — Beats · R&amp;B Neo Soul Popular</title>
+<meta name="description" content="Seven R&B / Neo-Soul productions by Byron Jupiter, New Orleans — recorded at The Box Studios. For artists, and as scores for film, television, and media. Licensing quoted by scope, in writing.">
+<style>
+  @font-face {
+    font-family: "Jupiter Deco";
+    src: url("fonts/JupiterDeco-CutTwo.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Jupiter Box";
+    src: url("fonts/JupiterBox-CutOne.ttf") format("truetype");
+    font-display: swap;
+  }
+  :root {
+    --field: #050814;
+    --field-2: #0a0f22;
+    --gold: #D4AF6A;
+    --gold-deep: #c79e4d;
+    --gold-hot: #f5a524;
+    --cream: #f0ebde;
+    --cream-dim: rgba(240, 235, 222, 0.72);
+    --line: rgba(212, 175, 106, 0.35);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background:
+      radial-gradient(1100px 600px at 50% -120px, rgba(212,175,106,0.14), transparent 60%),
+      radial-gradient(800px 500px at 85% 110%, rgba(245,165,36,0.06), transparent 60%),
+      var(--field);
+    color: var(--cream);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    padding: 28px 18px 64px;
+  }
+  .frame {
+    max-width: 1080px;
+    margin: 0 auto;
+    border: 1px solid var(--line);
+    outline: 1px solid rgba(212,175,106,0.16);
+    outline-offset: 6px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0) 220px), var(--field-2);
+    padding: 56px 42px 44px;
+    box-shadow: 0 40px 90px rgba(0,0,0,0.65), inset 0 1px 0 rgba(240,235,222,0.06);
+  }
+  .kicker {
+    font-family: "Jupiter Box", "Courier New", monospace;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold-hot);
+    text-align: center;
+  }
+  h1.title-3d {
+    font-family: "Jupiter Deco", Georgia, serif;
+    text-align: center;
+    font-size: clamp(52px, 10vw, 108px);
+    line-height: 1.02;
+    margin: 18px 0 6px;
+    background: linear-gradient(180deg, #fff6d8 0%, var(--gold) 42%, var(--gold-deep) 68%, #8a6a25 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #e9cf8f; /* fallback if clip unsupported */
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+      0 1px 0 rgba(0,0,0,0),
+      1px 2px 0 rgba(90, 66, 18, 0.55),
+      2px 4px 0 rgba(70, 51, 13, 0.5),
+      3px 6px 0 rgba(50, 37, 9, 0.45),
+      4px 9px 2px rgba(0,0,0,0.55),
+      6px 14px 22px rgba(0,0,0,0.8);
+  }
+  .subtitle {
+    text-align: center;
+    font-family: "Jupiter Deco", Georgia, serif;
+    font-size: clamp(19px, 3.4vw, 30px);
+    letter-spacing: 0.22em;
+    color: var(--cream);
+    margin-top: 10px;
+  }
+  .byline {
+    text-align: center;
+    color: var(--cream-dim);
+    font-style: italic;
+    margin-top: 12px;
+    font-size: 17px;
+  }
+  .imprint {
+    text-align: center;
+    font-family: "Jupiter Box", "Courier New", monospace;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    margin-top: 16px;
+  }
+  .gold-rule {
+    height: 2px;
+    border: 0;
+    margin: 38px auto;
+    max-width: 620px;
+    background: linear-gradient(90deg, transparent, var(--gold-deep) 18%, var(--gold) 50%, var(--gold-hot) 62%, var(--gold-deep) 82%, transparent);
+    box-shadow: 0 2px 10px rgba(212,175,106,0.35);
+  }
+  nav.doors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 6px 0 4px;
+  }
+  nav.doors a {
+    font-family: "Jupiter Box", "Courier New", monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 10px 18px;
+    background: linear-gradient(180deg, rgba(212,175,106,0.10), rgba(212,175,106,0.03));
+    box-shadow: 0 3px 0 rgba(90,66,18,0.55), 0 10px 22px rgba(0,0,0,0.45);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  nav.doors a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 rgba(90,66,18,0.55), 0 16px 28px rgba(0,0,0,0.5);
+    color: #ffe9ad;
+  }
+  section { margin-top: 18px; }
+  h2.section-title {
+    font-family: "Jupiter Deco", Georgia, serif;
+    font-size: clamp(28px, 5vw, 42px);
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    text-shadow: 1px 2px 0 rgba(70,51,13,0.6), 2px 4px 0 rgba(0,0,0,0.55), 4px 8px 16px rgba(0,0,0,0.7);
+    margin-bottom: 8px;
+  }
+  .section-intro { color: var(--cream-dim); max-width: 720px; font-size: 17px; }
+  .beats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin-top: 26px;
+  }
+  .beat {
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(160deg, rgba(212,175,106,0.09), rgba(212,175,106,0.015) 55%),
+      #070b1a;
+    padding: 22px 22px 18px;
+    box-shadow: inset 0 1px 0 rgba(240,235,222,0.07), 0 14px 30px rgba(0,0,0,0.5);
+  }
+  .beat .no {
+    font-family: "Jupiter Box", "Courier New", monospace;
+    color: var(--gold-hot);
+    font-size: 13px;
+    letter-spacing: 0.3em;
+  }
+  .beat h3 {
+    font-family: "Jupiter Deco", Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    color: var(--cream);
+    margin: 6px 0 8px;
+  }
+  .beat p { color: var(--cream-dim); font-size: 15.5px; }
+  .beat .lane {
+    margin-top: 12px;
+    font-size: 13.5px;
+    color: rgba(212,175,106,0.9);
+    border-top: 1px solid rgba(212,175,106,0.18);
+    padding-top: 10px;
+  }
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin-top: 26px;
+  }
+  .tier {
+    border: 1px solid var(--line);
+    padding: 24px 22px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0)), #070b1a;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.5);
+  }
+  .tier h3 {
+    font-family: "Jupiter Deco", Georgia, serif;
+    letter-spacing: 0.1em;
+    font-size: 23px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .tier ul { list-style: none; color: var(--cream-dim); font-size: 15.5px; }
+  .tier li { padding: 3px 0; }
+  .tier .price {
+    margin-top: 14px;
+    font-family: "Jupiter Box", "Courier New", monospace;
+    letter-spacing: 0.14em;
+    font-size: 12.5px;
+    color: var(--gold-hot);
+    text-transform: uppercase;
+  }
+  .disclosure {
+    margin-top: 24px;
+    color: rgba(240,235,222,0.55);
+    font-size: 13.5px;
+    font-style: italic;
+    max-width: 760px;
+  }
+  .door-box {
+    margin-top: 26px;
+    border: 1px solid var(--line);
+    padding: 30px 28px;
+    text-align: center;
+    background:
+      radial-gradient(520px 200px at 50% 0%, rgba(245,165,36,0.10), transparent 70%),
+      #070b1a;
+    box-shadow: inset 0 1px 0 rgba(240,235,222,0.07), 0 18px 36px rgba(0,0,0,0.55);
+  }
+  .door-box a.mail {
+    font-family: "Jupiter Deco", Georgia, serif;
+    font-size: clamp(20px, 3.6vw, 28px);
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .door-box a.mail:hover { color: #ffe9ad; }
+  .door-box p { color: var(--cream-dim); margin-top: 12px; font-size: 16px; }
+  .playlist-seat {
+    margin-top: 18px;
+    font-family: "Jupiter Box", "Courier New", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    color: rgba(240,235,222,0.5);
+  }
+  footer {
+    margin-top: 48px;
+    border-top: 1px solid rgba(212,175,106,0.22);
+    padding-top: 22px;
+    text-align: center;
+    color: rgba(240,235,222,0.6);
+    font-size: 14px;
+  }
+  footer .rendering { font-style: italic; }
+  footer .copy { margin-top: 6px; color: rgba(212,175,106,0.85); }
+  @media (max-width: 640px) {
+    .frame { padding: 38px 20px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <p class="kicker">BYRON JUPITER · New Orleans</p>
+  <h1 class="title-3d">BEATS</h1>
+  <p class="subtitle">R&amp;B · NEO SOUL · POPULAR</p>
+  <p class="byline">Byron Jupiter — Beats &amp; Scores: seven productions for artists, and as scores for the screen.</p>
+  <p class="imprint">A Black Secular Music collection · Publishing by Good Delivery (BMI)</p>
+
+  <hr class="gold-rule">
+
+  <nav class="doors">
+    <a href="#the-beats">The Beats</a>
+    <a href="#as-scores">As Scores</a>
+    <a href="#licensing">Licensing</a>
+    <a href="#the-door">The Door</a>
+  </nav>
+
+  <section id="the-beats">
+    <h2 class="section-title">THE BEATS</h2>
+    <p class="section-intro">One playlist, seven finished productions — 18 minutes, 41 seconds of R&amp;B and neo-soul by Byron Jupiter, recorded at The Box Studios in New Orleans. Every beat below is available to license, and every one also works as a score.</p>
+    <div class="beats">
+      <article class="beat">
+        <p class="no">Nº 01</p>
+        <h3>Heartfelt (so-so kicks)</h3>
+        <p>Soul worn openly, drums kept humble — a beat that leads with its heart and stays out of the singer's way.</p>
+        <p class="lane">As a score: the letter finally read aloud; reconciliation; sincerity that has to feel true.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 02</p>
+        <h3>What if</h3>
+        <p>The question every great hook asks — built for the verse that wonders and the chorus that answers.</p>
+        <p class="lane">As a score: the crossroads cue; second thoughts; the road not taken.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 03</p>
+        <h3>Coffee</h3>
+        <p>Morning-after warmth with a slow burn — smooth enough for the slow jam, awake enough to move.</p>
+        <p class="lane">As a score: first light, kitchens and cafés; the rituals that carry a relationship.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 04</p>
+        <h3>Hey What About You</h3>
+        <p>A call across the room that turns into a conversation — playful bounce with room for two voices.</p>
+        <p class="lane">As a score: the reunion, the unexpected call; two people finding the thread again.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 05</p>
+        <h3>Stoop to</h3>
+        <p>Porch-level soul from New Orleans — low, close, and unhurried, with the neighborhood in its pocket.</p>
+        <p class="lane">As a score: the block, the porch, coming home; a sense-of-place cue.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 06</p>
+        <h3>Plenty of Phases 2</h3>
+        <p>One relationship, every season of it — a beat that changes its weather and keeps its soul.</p>
+        <p class="lane">As a score: time passing, chapters turning; montage and series arcs.</p>
+      </article>
+      <article class="beat">
+        <p class="no">Nº 07</p>
+        <h3>Dead Silence</h3>
+        <p>What isn't said, said loudest — sparse, heavy space for the vocal that carries the weight alone.</p>
+        <p class="lane">As a score: the pause after the news; aftermath; grief held quiet.</p>
+      </article>
+    </div>
+  </section>
+
+  <hr class="gold-rule">
+
+  <section id="as-scores">
+    <h2 class="section-title">AS SCORES</h2>
+    <p class="section-intro">The same seven works are offered as finished scores for film, television, streaming, advertising, games, and media. What a music supervisor gets: broadcast-ready WAV of the production as delivered; stems, instrumental edits, and timing versions where the placement requires them, agreed in the written license; a clean rights picture — writer Byron Jupiter (100%), publisher Good Delivery (BMI), with the productions' license documentation held in the house registry and produced on request. Fees are quoted by scope, in writing — no rate card, no surprises after the fact.</p>
+  </section>
+
+  <hr class="gold-rule">
+
+  <section id="licensing">
+    <h2 class="section-title">LICENSING</h2>
+    <p class="section-intro">Packaged units, terms in writing, agreed before delivery. The buyer receives the work as delivered; the original stays with the house.</p>
+    <div class="tiers">
+      <div class="tier">
+        <h3>LEASE</h3>
+        <ul>
+          <li>MP3 + WAV of the finished beat</li>
+          <li>One commercial recording</li>
+          <li>Capped streams &amp; performances</li>
+          <li>Beat remains on the shelf</li>
+        </ul>
+        <p class="price">Quoted by scope</p>
+      </div>
+      <div class="tier">
+        <h3>PREMIUM</h3>
+        <ul>
+          <li>WAV + stems (trackouts)</li>
+          <li>One commercial recording</li>
+          <li>Wider caps than Lease</li>
+          <li>Beat remains on the shelf</li>
+        </ul>
+        <p class="price">Quoted by scope</p>
+      </div>
+      <div class="tier">
+        <h3>EXCLUSIVE</h3>
+        <ul>
+          <li>WAV + stems + session files as agreed</li>
+          <li>Widest use under the license</li>
+          <li>Beat leaves the shelf on payment</li>
+          <li>Authorship &amp; publishing stand with Byron Jupiter</li>
+        </ul>
+        <p class="price">Quoted by scope</p>
+      </div>
+    </div>
+    <p class="disclosure">These productions contain licensed royalty-free elements (Splice). Exclusivity covers Byron Jupiter's production; it does not and cannot convey ownership of the underlying licensed elements, which are non-exclusive by their own license.</p>
+  </section>
+
+  <hr class="gold-rule">
+
+  <section id="the-door">
+    <h2 class="section-title">THE DOOR</h2>
+    <div class="door-box">
+      <a class="mail" href="mailto:sales@leasethebox.com">sales@leasethebox.com</a>
+      <p>For a beat license or a score placement, write the door: name the work, the use, and the scope — the terms come back in writing, quoted by scope. Nothing is agreed outside writing.</p>
+      <!-- [untitled] playlist link: Byron to supply the share URL; place the anchor here when supplied. Never invent the URL. -->
+      <p class="playlist-seat">[untitled playlist link — Byron to supply]</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="imprint">A Black Secular Music collection · Publishing by Good Delivery (BMI)</p>
+    <p class="rendering">Rendering by the Byron Jupiter Agency, with Renaissance Instruments</p>
+    <p class="copy">© Byron Jupiter — sales@leasethebox.com</p>
+  </footer>
+
+</div>
+</body>
+</html>
